@@ -2,8 +2,6 @@ var mysql = require('mysql');
 var inquirer = require('inquirer');
 var cTable = require('console.table');
 
-
-
 var connection = mysql.createConnection({
   host: "localhost",
   port: 8889,
@@ -19,9 +17,8 @@ connection.connect(function (err) {
 connection.query('SELECT * FROM products', function (err, response) {
   if (err) throw err;
   console.table(response);
+  promptUser();
 })
-
-promptUser();
 
 function promptUser() {
   inquirer.prompt([
@@ -56,10 +53,11 @@ function approvePurchase(price, productId, quantRequested, stock_quantity) {
   var stock_quantity = stock_quantity - quantRequested;
   connection.query('UPDATE products SET stock_quantity = ' + stock_quantity + ' WHERE item_id = ' + productId, function (err, results) {
     if (err) throw err;
-    var output = `Thank you for your purchase. You spent $${price * quantRequested}`;
-    console.log(output);
+    console.log(`Thank you for your purchase. You spent $${price * quantRequested} (${price} X ${quantRequested})`);
   })
 }
+
+
 
 
 
