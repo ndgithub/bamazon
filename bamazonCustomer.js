@@ -56,8 +56,3 @@ function approvePurchase(price, productId, quantRequested, stock_quantity) {
     console.log(`Thank you for your purchase. You spent $${price * quantRequested} (${price} X ${quantRequested})`);
   })
 }
-
-
-
-
-
