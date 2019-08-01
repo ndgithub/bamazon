@@ -13,5 +13,5 @@ This is a command line app built using javascript, node.js, mysql database, and 
 
 ## Manager
 <p align="center">
-  <img width="50%" src="http://www.niteshdesai.com/other-images/bamazonManager.gif">
+  <img width="75%" src="http://www.niteshdesai.com/other-images/bamazonManager.gif">
 
