@@ -9,9 +9,11 @@ Amazon-like "storefront" app that has two portals: customer and manager. The cus
 This is a command line app built using javascript, node.js, mysql database, and the inquirer.js node module.
 
 ## Customer
-
+<p align="center">
+  <img width="75%" src="http://www.niteshdesai.com/other-images/bamazonCustomer.gif">
+</p>
 
 ## Manager
 <p align="center">
   <img width="75%" src="http://www.niteshdesai.com/other-images/bamazonManager.gif">
-
+</p>
