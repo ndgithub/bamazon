@@ -21,7 +21,7 @@
     "console": "^0.7.2",
     "console.table": "^0.10.0",
     "inquirer": "^6.2.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "mysql": "^2.16.0"
   }
 }
